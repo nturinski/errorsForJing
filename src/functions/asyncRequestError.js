@@ -1,6 +1,6 @@
 const { app } = require('@azure/functions');
 
-app.http('httpTrigger2', {
+app.http('asyncRequestError', {
     methods: ['GET', 'POST'],
     authLevel: 'anonymous',
     handler: async (request, context) => {
